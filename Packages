@@ -1,0 +1,4 @@
+python --version
+python -m pip install flask
+python app.py
+
