@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Career Recommendation Tool</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-orb orb-one"></div>
+  <div class="background-orb orb-two"></div>
+
+  <header class="hero">
+    <div class="hero-copy">
+      <div class="logo">AI</div>
+      <div>
+        <p class="eyebrow">Smart Internship Career Planner</p>
+        <h1>AI Career Recommendation Tool</h1>
+        <p>Personalized career matches, dynamic roadmaps, and an AI coach that grows with your goals.</p>
+      </div>
+    </div>
+    <div class="hero-badge">⚡ AI-powered guidance for your next step</div>
+  </header>
+
+  <section class="features" aria-label="Core features">
+    <button class="feature-card" data-target=".profile-card">
+      <span class="feature-icon">👤</span>
+      <strong>Skills & Interests</strong>
+      <small>Capture your strengths and goals.</small>
+    </button>
+    <button class="feature-card" data-target=".recommendations-card">
+      <span class="feature-icon">🧠</span>
+      <strong>Smart Matching</strong>
+      <small>Get the best-fit careers instantly.</small>
+    </button>
+    <button class="feature-card" data-target=".progress-card">
+      <span class="feature-icon">📚</span>
+      <strong>Dynamic Roadmaps</strong>
+      <small>Follow a roadmap that keeps updating.</small>
+    </button>
+    <button class="feature-card" data-target=".chatbot-card">
+      <span class="feature-icon">🤖</span>
+      <strong>AI Chatbot</strong>
+      <small>Ask for projects, plans, and interview prep.</small>
+    </button>
+  </section>
+
+  <main class="layout">
+    <aside class="card profile-card">
+      <h2>👤 1. Your Profile</h2>
+      <p class="card-subtitle">Tell us about your background so the recommendations feel personal and useful.</p>
+
+      <label for="name">Name</label>
+      <input id="name" type="text" value="Usama Zahid" />
+
+      <label for="level">Current Level</label>
+      <select id="level">
+        <option>Beginner</option>
+        <option selected>Intermediate</option>
+        <option>Advanced</option>
+      </select>
+
+      <label for="skills">Skills (comma separated)</label>
+      <textarea id="skills">Python, Machine Learning, TensorFlow, SQL, Data Analysis</textarea>
+
+      <label for="interests">Interests (comma separated)</label>
+      <textarea id="interests">AI, Data Science, Automation, Research</textarea>
+
+      <label for="goal">Career Goal</label>
+      <input id="goal" type="text" value="Get an AI internship" />
+
+      <button id="recommendBtn">✨ Get Recommendations</button>
+      <button id="saveBtn" class="secondary-btn">💾 Save Profile</button>
+      <button id="resetBtn" class="ghost-btn">↻ Reset Progress</button>
+    </aside>
+
+    <section class="card recommendations-card">
+      <div class="section-title">
+        <h2>🏆 2. Top Career Recommendations</h2>
+        <button id="exportBtn" class="small-btn">⬇ Export Report</button>
+      </div>
+
+      <div id="recommendations"></div>
+
+      <div class="summary">
+        <h3>✨ AI Summary</h3>
+        <p id="summaryText"></p>
+      </div>
+
+      <div class="insights-grid">
+        <div class="mini-card">
+          <h3>💼 Project Ideas</h3>
+          <ul id="projectIdeas"></ul>
+        </div>
+        <div class="mini-card">
+          <h3>🧩 Missing Skills</h3>
+          <ul id="missingSkills"></ul>
+        </div>
+      </div>
+    </section>
+
+    <aside class="card progress-card">
+      <h2>📈 3. Your Progress</h2>
+      <div class="current-path">Current Path: <strong id="currentPath">AI Engineer</strong></div>
+
+      <h3>Overall Progress</h3>
+      <div class="progress-row">
+        <div class="progress-track"><div id="overallBar" class="progress-fill"></div></div>
+        <strong id="progressPercent">0%</strong>
+      </div>
+
+      <h3 id="topicHeading">Learning Topics</h3>
+      <ul id="topicList" class="topic-list"></ul>
+
+      <div class="chart-box">
+        <h3>Progress Over Time</h3>
+        <div id="chart" class="chart"></div>
+        <div class="chart-labels"><span>Start</span><span>Week 1</span><span>Week 2</span><span>Now</span></div>
+      </div>
+    </aside>
+  </main>
+
+  <section class="card chatbot-card">
+    <div class="chat-header">
+      <div>
+        <h2>🤖 AI Career Chatbot</h2>
+        <p>Ask about roadmap, skills, projects, internships, or interview prep.</p>
+      </div>
+      <button id="clearChatBtn" class="small-btn">Clear Chat</button>
+    </div>
+    <div id="chatMessages" class="chat-messages"></div>
+    <div class="quick-prompts">
+      <button data-prompt="Give me a 30 day plan">30 day plan</button>
+      <button data-prompt="What projects should I build?">Project ideas</button>
+      <button data-prompt="How can I prepare for internship interviews?">Interview prep</button>
+      <button data-prompt="Which skills am I missing?">Missing skills</button>
+    </div>
+    <form id="chatForm" class="chat-form">
+      <input id="chatInput" type="text" placeholder="Type your question here..." autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>💡 Keep learning, keep building, and shape your future with the right skills! 🚀</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
