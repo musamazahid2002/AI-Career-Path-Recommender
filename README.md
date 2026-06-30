@@ -8,6 +8,7 @@ The AI Career Recommendation Tool is a web-based application designed to help in
 🚀 Features
 
 👤 User Profile Assessment
+
 Enter your name, current level, technical skills, interests and career goals.
 Personalized recommendations based on your profile.
 
@@ -57,20 +58,20 @@ Clear saved progress and start again.
 
 🛠️ Technologies Used
 
-Frontend
-HTML5
-CSS3
-JavaScript (ES6)
-UI
-Responsive Layout
-CSS Flexbox
-CSS Grid
-Modern Card Design
-Progress Bars
-Interactive Charts
-AI Features
-Career Recommendation Logic
-Skill Matching Algorithm
-AI Chat Assistant
-Dynamic Roadmap Generator
+- Frontend  
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- UI
+- Responsive Layout
+- CSS Flexbox
+- CSS Grid
+- Modern Card Design
+- Progress Bars
+- Interactive Charts
+- AI Features
+- Career Recommendation Logic
+- Skill Matching Algorithm
+- AI Chat Assistant
+- Dynamic Roadmap Generator
 
