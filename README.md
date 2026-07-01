@@ -52,6 +52,7 @@ Download career recommendation report.
 💾 Save Profile
 
 Store user profile in browser local storage.
+
 🔄 Reset Progress
 
 Clear saved progress and start again.
